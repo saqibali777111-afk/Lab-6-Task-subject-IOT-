@@ -1,0 +1,61 @@
+# Name Saqib Ali
+# Roll Number 86
+
+# Q1
+
+numbers = [2, 3, 2, 5, 3, 2, 5, 8]
+
+result = {}
+
+for num in numbers:
+    if num in result:
+        result[num] += 1
+    else:
+        result[num] = 1
+
+print(result)
+
+
+# Q2
+
+marks = {
+    'Ali': 85,
+    'Sara': 95,
+    'Ahmed': 95,
+    'Noor': 78
+}
+
+highest = max(marks.values())
+
+for name, mark in marks.items():
+    if mark == highest:
+        print(name, mark)
+
+
+# Q3
+
+data = {'a': 1, 'b': 2, 'c': 3}
+
+new_data = {}
+
+for key, value in data.items():
+    new_data[value] = key
+
+print(new_data)
+
+
+# Q4
+
+words = ['apple', 'ant', 'banana', 'ball', 'cat']
+
+result = {}
+
+for word in words:
+    first = word[0]
+
+    if first in result:
+        result[first].append(word)
+    else:
+        result[first] = [word]
+
+print(result)
